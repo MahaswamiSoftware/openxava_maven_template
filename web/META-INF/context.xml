@@ -19,12 +19,12 @@
 		Right button on your project > Properties > Java Build Path > Libraries
 	-->
 	 
-	<!-- HSQLDB  -->
+	<!-- HSQLDB
     <Resource name="jdbc/RestaurantDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="sa" password="" driverClassName="org.hsqldb.jdbcDriver"
 	      url="jdbc:hsqldb:hsql://localhost:1666"/>
-
+	-->
 	      
 	<!-- MySQL       
     <Resource name="jdbc/RestaurantDS" auth="Container" type="javax.sql.DataSource"
@@ -33,13 +33,13 @@
 	      url="jdbc:mysql://localhost:3306/"/>	      
 	-->      
 	
-	<!-- PostgreSQL
+	<!-- PostgreSQL -->
 	<Resource name="jdbc/RestaurantDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="postgres" password="postgres" 
+	      username="postgres" password="test"
 	      driverClassName="org.postgresql.Driver"
 	      url="jdbc:postgresql://localhost:5432/restaurant_db"/>
-	  -->
+
 	
 	<!-- Oracle 
 	<Resource name="jdbc/RestaurantDS" auth="Container" type="javax.sql.DataSource"

@@ -8,23 +8,33 @@ import java.util.logging.Logger;
 import org.hsqldb.server.*;
 
 public class Main {
+    private static final int PORT_NUMBER = 8080;
 
     public static void main(String[] args) throws Exception {
+        int port = PORT_NUMBER;
+        if(args.length > 0 && args[0].length() == 4){
+            try {
+                port = Integer.parseInt(args[0]);
+            }catch (NumberFormatException nEx){
+                //System.out.println(nEx.getCause());
+                port = PORT_NUMBER;
+            }
+        }
         start("RestaurantDB");
-        run("Restaurant");
+        run("Restaurant", port);
     }
 
-    public static void run(String app) throws Exception {
+    public static void run(String app, int port) throws Exception {
         System.out.println("starting_application");
         String webappDir = (new File("web")).getAbsolutePath();
         Tomcat tomcat = new Tomcat();
         tomcat.setBaseDir("temp");
-        tomcat.setPort(8080);
+        tomcat.setPort(port);
         tomcat.getConnector();
         tomcat.enableNaming();
         tomcat.addWebapp("/" + app, webappDir);
         tomcat.start();
-        System.out.println("application_started_go http://localhost:8080/" + app);
+        System.out.println("application_started_go http://localhost:" + port + "/" + app);
         tomcat.getServer().await();
     }
 

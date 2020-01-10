@@ -19,19 +19,19 @@
 		Right button on your project > Properties > Java Build Path > Libraries
 	-->
 	 
-	<!-- HSQLDB  -->
+	<!-- HSQLDB
     <Resource name="jdbc/MavenTemplateDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="sa" password="" driverClassName="org.hsqldb.jdbcDriver"
 	      url="jdbc:hsqldb:hsql://localhost:1666"/>
-
+	-->
 	      
-	<!-- MySQL       
-    <Resource name="jdbc/MavenTemplateDS" auth="Container" type="javax.sql.DataSource"
+	<!-- MySQL -->
+	<Resource name="jdbc/MavenTemplateDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="root" password="" driverClassName="com.mysql.jdbc.Driver"
-	      url="jdbc:mysql://localhost:3306/"/>	      
-	-->      
+	      username="mysqluser" password="" driverClassName="com.mysql.jdbc.Driver"
+	      url="jdbc:mysql://localhost:3306/database_name"/>
+
 	
 	<!-- PostgreSQL
 	<Resource name="jdbc/MavenTemplateDS" auth="Container" type="javax.sql.DataSource"

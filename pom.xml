@@ -510,11 +510,14 @@
           <artifactId>xmlbeans</artifactId>
           <version>3.1.0</version>
       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
       <dependency>
-          <groupId>org.hsqldb</groupId>
-          <artifactId>hsqldb</artifactId>
-          <version>2.4.0</version>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.6</version>
       </dependency>
+
       <dependency>
           <groupId>org.openxava</groupId>
           <artifactId>openxava-x</artifactId>

@@ -2,10 +2,12 @@ package launch;
 
 import org.apache.catalina.startup.Tomcat;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.hsqldb.server.*;
 
 public class Main {
     private static final int PORT_NUMBER = 8080;
@@ -20,7 +22,7 @@ public class Main {
                 port = PORT_NUMBER;
             }
         }
-        start("MavenTemplateDB");
+
         run("MavenTemplate", port);
     }
 
@@ -36,17 +38,5 @@ public class Main {
         tomcat.start();
         System.out.println("application_started_go http://localhost:" + port + "/" + app);
         tomcat.getServer().await();
-    }
-
-    public static void start(String dbName) throws Exception {
-        (new Thread(() -> {
-            Server hsqlServer = new Server();
-            hsqlServer.setSilent(true);
-            hsqlServer.setDatabaseName(0, "");
-            hsqlServer.setDatabasePath(0, "file:data/" + dbName);
-            hsqlServer.setPort(1666);
-            hsqlServer.start();
-            Logger.getLogger("").setLevel(Level.INFO);
-        })).start();
     }
 }

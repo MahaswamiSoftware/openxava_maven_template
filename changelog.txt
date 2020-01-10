@@ -1,0 +1,7 @@
+﻿Change Log for OpenXava Maven Template
+=====================================
+
+MavenTemplate 6.2.2.1 (Jan 3, 2020)
+--------------------------
+- Includes OpenXava 6.2.2.
+- Includes Tomcat 9.0.30

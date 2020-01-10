@@ -16,7 +16,7 @@ public class Main {
                 port = PORT_NUMBER;
             }
         }
-        run("Restaurant", port);
+        run("MavenTemplate", port);
     }
 
     public static void run(String app, int port) throws Exception {

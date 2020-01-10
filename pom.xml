@@ -3,12 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mahaswami</groupId>
   <artifactId>openxava</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>6.2.2.1</version>
   <packaging>jar</packaging>
   <name>openxava webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <tomcat.version>8.5.38</tomcat.version>
+      <tomcat.version>9.0.30</tomcat.version>
+      <deploy.path>${project.build.directory}/${project.build.finalName}.${project.packaging}</deploy.path>
   </properties>
   <dependencies>
     <dependency>
@@ -229,7 +230,7 @@
       <dependency>
           <groupId>xml-apis</groupId>
           <artifactId>xml-apis</artifactId>
-          <version>2.0.2</version>
+          <version>1.4.01</version>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->

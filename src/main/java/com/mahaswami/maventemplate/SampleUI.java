@@ -1,4 +1,4 @@
-package com.yourcompany.restaurant.model;
+package com.mahaswami.maventemplate;
 
 import org.openxava.annotations.*;
 

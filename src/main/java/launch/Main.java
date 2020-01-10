@@ -20,8 +20,8 @@ public class Main {
                 port = PORT_NUMBER;
             }
         }
-        start("RestaurantDB");
-        run("Restaurant", port);
+        start("MavenTemplateDB");
+        run("MavenTemplate", port);
     }
 
     public static void run(String app, int port) throws Exception {

@@ -1,4 +1,4 @@
-package com.yourcompany.restaurant.model;
+package com.mahaswami.maventemplate.model;
 
 import java.math.*;
 import java.time.*;

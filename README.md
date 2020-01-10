@@ -12,8 +12,11 @@
         * git checkout openxava_maven_template_postgres
 
     # Steps to Run including custom port number through terminal
-        * mvn clean package
-        * sh target/bin/webapp port(To override the default port 8080)
+        
+	* mvn clean package
+        
+	* sh target/bin/webapp port(To override the default port 8080)
+	
 	*(For example) sh target/bin/webapp 9090
 
 ## For Support contact sales@mahaswami.com

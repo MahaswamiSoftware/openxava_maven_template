@@ -1,4 +1,4 @@
-package com.yourcompany.restaurant.model;
+package com.mahaswami.maventemplate.model;
 
 import javax.persistence.*;
 import org.openxava.annotations.*;
@@ -20,12 +20,7 @@ public class Employee {
 	
 	@Column(length = 20)
 	private String city;
-	
-	@OneToOne
-	private Role role;
 
-	//private boolean isAdmin;
-	
 	private double salary;
 
 	public int getId() {
@@ -59,22 +54,6 @@ public class Employee {
 	public void setCity(String city) {
 		this.city = city;
 	}
-
-	public Role getRole() {
-		return role;
-	}
-
-	public void setRole(Role role) {
-		this.role = role;
-	}
-
-	/*public boolean isAdmin() {
-		return isAdmin;
-	}
-
-	public void setAdmin(boolean isAdmin) {
-		this.isAdmin = isAdmin;
-	}*/
 
 	public double getSalary() {
 		return salary;

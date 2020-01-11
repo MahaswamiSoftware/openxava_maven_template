@@ -11,7 +11,7 @@
     
             * git checkout openxava_maven_template_postgres
             
-    * For musql database, can switch to mysql branch.
+    * For mysql database, can switch to mysql branch.
         
         * git checkout openxava_maven_template_mysql
 
@@ -23,10 +23,10 @@
 	
 	    *(For example) sh target/bin/webapp 9090
 	    
-	* Easy add you database
+	* Easy to add your database
 	
 	    * To define the access to your database 
 	    
-	    * Add your own Resource entry, JDBC URL and driver class for your database in the web/META-INF/context.xml
+	    * Add your own Resource entry, JDBC URL and driver class for your database in web/META-INF/context.xml
 
 ## For Support contact sales@mahaswami.com

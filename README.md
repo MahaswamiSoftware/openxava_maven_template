@@ -1,32 +1,33 @@
+# Maven support for OpenXava
 
-# Mavenized version of openxava
+## Highlights
 
-    * It uses embdded version of Tomcat
+- It uses embdded version of Tomcat (contact us if you prefer WAR support)
+- It currently supports OpenXava version 6.2.2.
+- It supports HSQL database by default
 
-    * It supports version 6.2.2
+## Steps to Run
+- The following is for Linux based command line
+```
+mvn clean package
+sh target/bin/webapp (Runs using port number 8080)
+sh target/bin/webapp <port_number> (Override the port)
+```
 
-    * It supports hsql database by default
+## For Use with Postgresql DB
 
-    * For postgres database, can switch to postgres branch.
-    
-            * git checkout openxava_maven_template_postgres
-            
-    * For mysql database, can switch to mysql branch.
-        
-        * git checkout openxava_maven_template_mysql
+- Switch to openxava_maven_template_postgres branch
 
-    # Steps to Run including custom port number through terminal
-        
-	    * mvn clean package
-        
-	    * sh target/bin/webapp port(To override the default port 8080)
-	
-	    *(For example) sh target/bin/webapp 9090
-	    
-	* Easy to add your database
-	
-	    * To define the access to your database 
-	    
-	    * Add your own Resource entry, JDBC URL and driver class for your database in web/META-INF/context.xml
+## For Use with MySQL DB
 
-## For Support contact sales@mahaswami.com
+- Switch to openxava_maven_template_mysql branch.
+
+## Other Databases
+
+- Need to have JDBC driver for it
+- Update the web/META-INF/context.xml with the respective resource entries
+- Add the jdbc driver library Maven dependency
+
+## Need anything more advanced using this?
+
+- Contact us via sales@mahaswami.com

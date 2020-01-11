@@ -524,8 +524,19 @@
       </dependency>
   </dependencies>
   <build>
-    <finalName>openxava</finalName>
-    <plugins>
+      <finalName>openxava</finalName>
+      <resources>
+          <resource>
+              <directory>persistence</directory>
+          </resource>
+          <resource>
+              <directory>properties</directory>
+          </resource>
+          <resource>
+              <directory>xava</directory>
+          </resource>
+      </resources>
+      <plugins>
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>appassembler-maven-plugin</artifactId>
@@ -557,6 +568,6 @@
                 <target>8</target>
             </configuration>
         </plugin>
-    </plugins>
+      </plugins>
   </build>
 </project>

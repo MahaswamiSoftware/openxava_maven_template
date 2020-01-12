@@ -33,6 +33,6 @@ sh target/bin/webapp <port_number> (Override the port)
 - We will try to document this in the future.
 - We are happy to provide case by case support in this regard for the moment.
 
-## Need anything more advanced using this?
+## Need any help for more advanced use cases / support?
 
 - Contact us via sales@mahaswami.com

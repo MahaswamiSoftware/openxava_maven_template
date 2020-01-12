@@ -28,6 +28,11 @@ sh target/bin/webapp <port_number> (Override the port)
 - Update the web/META-INF/context.xml with the respective resource entries
 - Add the jdbc driver library Maven dependency
 
+## Other Application Servers
+
+- We will try to document this in the future.
+- We are happy to provide case by case support in this regard for the moment.
+
 ## Need anything more advanced using this?
 
 - Contact us via sales@mahaswami.com

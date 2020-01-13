@@ -8,8 +8,7 @@
   <name>openxava webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-      <tomcat.version>9.0.30</tomcat.version>
-      <deploy.path>${project.build.directory}/${project.build.finalName}.${project.packaging}</deploy.path>
+    <tomcat.version>9.0.30</tomcat.version>
   </properties>
   <dependencies>
     <dependency>
@@ -525,8 +524,19 @@
       </dependency>
   </dependencies>
   <build>
-    <finalName>openxava</finalName>
-    <plugins>
+      <finalName>openxava</finalName>
+      <resources>
+          <resource>
+              <directory>persistence</directory>
+          </resource>
+          <resource>
+              <directory>properties</directory>
+          </resource>
+          <resource>
+              <directory>xava</directory>
+          </resource>
+      </resources>
+      <plugins>
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>appassembler-maven-plugin</artifactId>
@@ -558,6 +568,6 @@
                 <target>8</target>
             </configuration>
         </plugin>
-    </plugins>
+      </plugins>
   </build>
 </project>

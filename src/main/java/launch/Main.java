@@ -35,8 +35,8 @@ public class Main {
         File root = getRootFolder();
         System.setProperty("org.apache.catalina.startup.EXIT_ON_INIT_FAILURE", "true");
         Tomcat tomcat = new Tomcat();
-        Path tempPath = Files.createTempDirectory("tomcat-base-dir");
-        tomcat.setBaseDir(tempPath.toString());
+        //Path tempPath = Files.createTempDirectory("tomcat-base-dir");
+        //tomcat.setBaseDir(tempPath.toString());
         tomcat.setPort(port);
         tomcat.getConnector();
         tomcat.enableNaming();

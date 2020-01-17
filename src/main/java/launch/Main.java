@@ -31,10 +31,10 @@ public class Main {
             }
         }
         start("MavenTemplateDB");
-        run("MavenTemplate", port);
+        run(port);
     }
 
-    public static void run(String app, int port) throws Exception {
+    public static void run(int port) throws Exception {
         System.out.println("starting_application");
 
         File root = getRootFolder();
@@ -51,7 +51,7 @@ public class Main {
         if (!webContentFolder.exists()) {
             webContentFolder = Files.createTempDirectory("default-doc-base").toFile();
         }
-        StandardContext ctx = (StandardContext) tomcat.addWebapp("/" + app, webContentFolder.getAbsolutePath());
+        StandardContext ctx = (StandardContext) tomcat.addWebapp("/", webContentFolder.getAbsolutePath());
         //Set execution independent of current thread context classloader (compatibility with exec:java mojo)
         ctx.setParentClassLoader(Main.class.getClassLoader());
 

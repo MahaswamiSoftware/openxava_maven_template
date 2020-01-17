@@ -535,6 +535,9 @@
           <resource>
               <directory>xava</directory>
           </resource>
+          <resource>
+              <directory>i18n</directory>
+          </resource>
       </resources>
       <plugins>
         <plugin>

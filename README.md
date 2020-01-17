@@ -28,6 +28,16 @@ sh target/bin/webapp <port_number> (Override the port)
 - Update the web/META-INF/context.xml with the respective resource entries
 - Add the jdbc driver library Maven dependency
 
-## Need anything more advanced using this?
+## Building a standalone WAR file for deploying to existing Tomcat installs
+
+- We will try to support this in the future.
+- Contact us for support in this regard for the moment.
+
+## Other Application Servers
+
+- We will try to document this in the future.
+- We are happy to provide case by case support in this regard for the moment.
+
+## Need any help for more advanced use cases / support?
 
 - Contact us via sales@mahaswami.com

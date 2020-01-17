@@ -5,7 +5,7 @@
 <%@page import="org.openxava.util.Locales"%>
 <%@page import="org.openxava.web.style.XavaStyle"%>
 <%@page import="org.openxava.util.XavaPreferences"%>
-
+<%@page import="com.openxava.naviox.util.NaviOXPreferences"%>
 
 <%-- To put your own text add entries in the i18n messages files of your project 
 In MyApplication-labels_en.properties:
@@ -17,7 +17,7 @@ welcome_point1=This is a additional explanatory line
 --%>
 
 <%
-String applicationName = request.getContextPath().substring(1);
+String applicationName = NaviOXPreferences.getInstance().getapplicationName();
 MetaApplication metaApplication = MetaApplications.getMetaApplication(applicationName);
 Locales.setCurrent(request);
 String oxVersion = org.openxava.controller.ModuleManager.getVersion();
@@ -30,6 +30,7 @@ if (title == null) title = metaApplication.getLabel();
 <head>
 	<title><%=title%></title>
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <meta http-equiv="Refresh" content="0; url=<%=request.getContextPath()%>/m/SignIn">
 	<link href="<%=request.getContextPath()%>/xava/style/<%=XavaPreferences.getInstance().getStyleCSS()%>?ox=<%=oxVersion%>" rel="stylesheet" type="text/css">
 </head>
 

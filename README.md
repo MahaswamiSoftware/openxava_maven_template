@@ -16,8 +16,8 @@ sh target/bin/webapp <port_number> (Override the port)
 - The following is for Windows based command line
 ```
 mvn clean package
-target/bin/webapp.bat (Runs using port number 8080)
-target/bin/webapp.bat <port_number> (Override the port)
+target\bin\webapp.bat (Runs using port number 8080)
+target\bin\webapp.bat <port_number> (Override the port)
 ```
 
 

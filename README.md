@@ -5,6 +5,7 @@
 - It uses embdded version of Tomcat (contact us if you prefer WAR support)
 - It currently supports OpenXava version 6.2.2.
 - It supports HSQL database by default
+- Works on both Windows and Linux
 
 ## Steps to Run
 - The following is for Linux based command line
@@ -31,9 +32,10 @@ target\bin\webapp.bat <port_number> (Override the port)
 
 ## Other Databases
 
-- Need to have JDBC driver for it
+- Support all Relational databases supported by Hibernate
 - Update the web/META-INF/context.xml with the respective resource entries
 - Add the jdbc driver library Maven dependency
+- Also edit persistance.xml to change the appropriate DB dialect.
 
 ## Building a standalone WAR file for deploying to existing Tomcat installs
 

@@ -543,6 +543,16 @@
             <version>2.0.0</version>
             <configuration>
                 <assembleDirectory>target</assembleDirectory>
+                <repositoryLayout>flat</repositoryLayout>
+                <repositoryName>libs</repositoryName>
+                <showConsoleWindow>true</showConsoleWindow>
+                <configurationDirectory>conf</configurationDirectory>
+                <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
+                <useWildcardClassPath>true</useWildcardClassPath>
+                <platforms>
+                    <platform>unix</platform>
+                    <platform>windows</platform>
+                </platforms>
                 <programs>
                     <program>
                         <mainClass>launch.Main</mainClass>

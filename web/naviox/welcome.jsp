@@ -30,8 +30,7 @@ if (title == null) title = metaApplication.getLabel();
 <head>
 	<title><%=title%></title>
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
-    <meta http-equiv="Refresh" content="0; url=<%=request.getContextPath()%>/m/SignIn">
-	<link href="<%=request.getContextPath()%>/xava/style/<%=XavaPreferences.getInstance().getStyleCSS()%>?ox=<%=oxVersion%>" rel="stylesheet" type="text/css">
+    <link href="<%=request.getContextPath()%>/xava/style/<%=XavaPreferences.getInstance().getStyleCSS()%>?ox=<%=oxVersion%>" rel="stylesheet" type="text/css">
 </head>
 
 <body id="welcome" <%=XavaStyle.getBodyClass(request)%>>

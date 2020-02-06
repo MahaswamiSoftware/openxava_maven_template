@@ -47,6 +47,6 @@ target\bin\webapp.bat <port_number> (Override the port)
 - We will try to document this in the future.
 - We are happy to provide case by case support in this regard for the moment.
 
-## Need any help for more advanced use cases / support?
+## Need any help with OpenXava? Have needs with advanced use cases / support?
 
 - Contact us via sales@mahaswami.com

@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.EmptyResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.apache.log4j.PropertyConfigurator;
 import org.hsqldb.server.*;
 
 public class Main {
@@ -23,6 +24,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         int port = PORT_NUMBER;
+        PropertyConfigurator.configure("properties/logging.properties");
         if(args.length > 0 && args[0].length() == 4){
             try {
                 port = Integer.parseInt(args[0]);

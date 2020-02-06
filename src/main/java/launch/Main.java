@@ -7,6 +7,7 @@ import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.EmptyResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.apache.log4j.PropertyConfigurator;
 
 import java.io.File;
 import java.net.URISyntaxException;
@@ -18,6 +19,7 @@ public class Main {
     private static final int PORT_NUMBER = 8080;
 
     public static void main(String[] args) throws Exception {
+        PropertyConfigurator.configure("properties/logging.properties");
         int port  = PORT_NUMBER;
         if(args.length > 0 && args[0].length() == 4) {
             try {

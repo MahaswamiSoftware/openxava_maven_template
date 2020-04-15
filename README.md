@@ -47,6 +47,12 @@ target\bin\webapp.bat <port_number> (Override the port)
 - We will try to document this in the future.
 - We are happy to provide case by case support in this regard for the moment.
 
+## Upgrading OpenXava Version to Latest version
+
+- Get the OpenXava latest version
+- Replace openxava.jar and addons.jar in src/lib folder and web/WEB-INF/lib folder to latest version jars
+- Replace addons-pro.jar in web/WEB-INF/lib folder to latest version jar
+
 ## Need any help with OpenXava? Have needs with advanced use cases / support?
 
 - Contact us via sales@mahaswami.com

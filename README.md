@@ -50,8 +50,10 @@ target\bin\webapp.bat <port_number> (Override the port)
 ## Upgrading OpenXava Version to Latest version
 
 - Get the OpenXava latest version
-- Replace openxava.jar and addons.jar in src/lib folder and web/WEB-INF/lib folder to latest version jars
-- Replace addons-pro.jar in web/WEB-INF/lib folder to latest version jar
+- Replace the following jars to latest version jars
+- openxava.jar in src/lib folder and web/WEB-INF/lib folder
+- addons.jar in src/lib folder and web/WEB-INF/lib folder
+- addons-pro.jar in web/WEB-INF/lib folder
 
 ## Need any help with OpenXava? Have needs with advanced use cases / support?
 

@@ -156,7 +156,7 @@
       <dependency>
           <groupId>org.apache.pdfbox</groupId>
           <artifactId>pdfbox</artifactId>
-          <version>2.0.18</version>
+          <version>2.0.24</version>
       </dependency>
       <!-- https://mvnrepository.com/artifact/com.liferay.portal/portal-kernel -->
       <dependency>
